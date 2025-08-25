@@ -1,4 +1,4 @@
 # LosMagios-CuartoSemestre
 
 
-#Integrantes:
+Integrantes:
