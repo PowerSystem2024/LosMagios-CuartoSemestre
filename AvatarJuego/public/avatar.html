@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LA LEYENDA DE AANG: AVATAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>EL AVATAR: LA LEYENDA DE AANG</h1>
+    <main>
+        <section class="section-personaje" id="seleccionar-personaje">
+            <h2>Elige tu Personaje</h2>
+            <div class="div-personajes" id="contenedor-tarjetas">
+                <!--Esto se completa con js-->
+            </div>
+
+
+            <button id="boton-personaje" class="btn-personaje">Seleccionar</button>
+        </section>
+
+        <section class="section-ataque" id="seleccionar-ataque">
+            <h2>Elige tu ataque</h2>
+            <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>El personaje <span id="personaje-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+            <p>
+                <button class="botones-ataque" id="boton-punio">Punio ✊ </button>
+                <button class="botones-ataque" id="boton-patada">Patada 🦶</button>
+                <button class="botones-ataque" id="boton-barrida">Barrida 💨</button>
+            </p>
+        </section>
+
+        <section class="mensajes" id="mensajes">
+        </section>
+
+        <section id="reiniciar">
+            <button id="boton-reiniciar" class="btn-reiniciar">Reiniciar</button>
+        </section>
+
+        
+        <button id="toggle-reglas" class="btn-reglas">📜 Ver reglas del juego</button>
+        <section id="seccion-reglas" style="display: none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 6px; background-color: #f9f9f9;">
+        <h3>Reglas del juego</h3>
+        <ul>
+            <li>Debes seleccionar un personaje antes de comenzar.</li>
+            <li>Ambos jugadores (tú y el enemigo) tienen <strong>3 vidas</strong>.</li>
+            <li><strong>Patada</strong> gana a <strong>Punio</strong>.</li>
+            <li><strong>Punio</strong> gana a <strong>Barrida</strong>.</li>
+            <li><strong>Barrida</strong> gana a <strong>Patada</strong>.</li>
+            <li>Si ambos usan el mismo ataque, es un <strong>empate</strong>.</li>
+        </ul>
+        </section>
+    </main>
+    
+    <script src="./js/avatar.js"></script>
+</body>
+</html>

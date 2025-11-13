@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    background-image: url('../assets/img/avatar-sabemos-pelicula-continuara-historia-serie-animada.webp');
+    background-position: center 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    font-family: "Chela One", system-ui;
+    font-size: 50px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,  /* Sombra superior izquierda */
+     1px -1px 0 #000,  /* Sombra superior derecha */
+    -1px  1px 0 #000,  /* Sombra inferior izquierda */
+     1px  1px 0 #000;  /* Sombra inferior derecha */
+}
+
+
+.btn-personaje, .botones-ataque, .btn-reiniciar{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all 0.5s ease-in;
+}
+
+.btn-personaje:hover, .botones-ataque:hover, .btn-reiniciar:hover{
+    background-color: #b6d3df;
+}
+
+.btn-reglas{
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.5s ease-in;
+}
+
+.btn-reglas:hover{
+    background-color: #b6d3df;
+}
+
+
+main{
+    background-color: #a3c1eab6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    font-family: "Chela One", system-ui;
+    text-shadow:
+    -1px -1px 0 #000,  /* Sombra superior izquierda */
+     1px -1px 0 #000,  /* Sombra superior derecha */
+    -1px  1px 0 #000,  /* Sombra inferior izquierda */
+     1px  1px 0 #000;  /* Sombra inferior derecha */
+}
+
+section{
+    margin-top: 50px;
+}
+
+.section-personaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-personajes{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-personaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-personaje img{
+    width: 100px;
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.div-personajes div input, .div-personajes div label{
+    cursor: pointer;
+}
+
+.section-ataque p{
+    padding-top: 30px;
+}
+
+.mensajes p{
+    padding-top: 20px;
+}
+
+.mensajes .parrafo2{
+    color: #42a6d1;
+    font-weight: 600;
+
+}
+
+ @media (max-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+ }
+
+  @media (max-width: 568px){
+    h1{
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .mensajes{
+        padding: 0 30px;
+    }
+ }
+
